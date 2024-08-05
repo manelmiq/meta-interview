@@ -1,2 +1,24 @@
 .App {
+    display: flex;
+    justify-content: space-between; /* Optional: Adjusts spacing between columns */
+}
+
+.box {
+    flex: 1; /* Each column takes up equal space */
+    margin: 10px; /* Optional: Adds space around each column */
+    padding: 20px; /* Optional: Padding inside each column */
+    text-align: center; /* Optional: Center-align text */
+    border: 1px solid black; /* Optional: Adds a border around each column */
+    border-radius: 20px;
+    width: 250px;
+    max-width: 300px;
+}
+
+.control-buttons {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
