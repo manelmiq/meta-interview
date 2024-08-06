@@ -1,7 +1,6 @@
 import "./styles.css";
-import LeftBox from "./components/LeftBox";
+import Box from "./components/Box";
 import ControlButtons from "./components/ControlButtons";
-import RightBox from "./components/RightBox";
 import {items} from "./data";
 import {useEffect, useState} from "react";
 import {useDataContext} from "./context/DataContext";
@@ -12,7 +11,7 @@ export default function App() {
     handleSelect, moveItemsToRight, selectedItem} = useDataContext();
   
   return <div className="App">
-    <LeftBox
+    <Box
       data={itemsLeft}
       handleSelect={handleSelect}
       selectedItem={selectedItem}
@@ -20,7 +19,7 @@ export default function App() {
     <ControlButtons
       moveToLeft={moveItemsToLeft}
       moveToRight={moveItemsToRight}/>
-    <RightBox
+    <Box
       data={itemsRight}
       handleSelect={handleSelect}
       selectedItem={selectedItem}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LeftBox = ({data, handleSelect, selectedItem}) => {
+const Box = ({data, handleSelect, selectedItem}) => {
   return (
     <div className="box">
       {data && data.map((item, index) => (
@@ -22,4 +22,4 @@ const LeftBox = ({data, handleSelect, selectedItem}) => {
     </div>
   );
 }
-export default LeftBox;
+export default Box;
