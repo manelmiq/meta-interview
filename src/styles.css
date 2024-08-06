@@ -1,6 +1,6 @@
 .App {
     display: flex;
-    justify-content: space-between; /* Optional: Adjusts spacing between columns */
+    justify-content: center;
 }
 
 .box {

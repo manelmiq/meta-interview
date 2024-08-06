@@ -8,7 +8,6 @@ const LeftBox = ({data, handleSelect, selectedItem}) => {
           <input
             type="checkbox"
             onClick={(e) => {
-              console.log(e.target.checked);
               if (e.target.checked) {
                 handleSelect(item, 'add')
               } else {
